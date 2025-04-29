@@ -1,8 +1,9 @@
+// SceneDelegate.swift
 //
-//  SceneDelegate.swift
-//  dime
+// Scene delegate for managing UI lifecycle and window configuration
+// Created by Tariq Shafiq
 //
-//  Created by Rafael Soh on 24/8/22.
+// Copyright © 2024 Zakatly. All rights reserved.
 //
 
 import SwiftUI

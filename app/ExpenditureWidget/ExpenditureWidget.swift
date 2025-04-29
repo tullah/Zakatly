@@ -1,15 +1,15 @@
+// ExpenditureWidget.swift
 //
-//  ExpenditureWidget.swift
-//  ExpenditureWidget
+// Widget extension for displaying expenditure information
+// Created by Tariq Shafiq
 //
-//  Created by Rafael Soh on 25/7/22.
-//
+// Copyright © 2024 Zakatly. All rights reserved.
 
 import SwiftUI
 import WidgetKit
 
 @main
-struct DimeWidgets: WidgetBundle {
+struct ZakatlyWidgets: WidgetBundle {
     var body: some Widget {
         RecentExpenditureWidget()
         InsightsWidget()

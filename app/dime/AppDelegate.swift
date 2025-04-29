@@ -1,8 +1,9 @@
+// AppDelegate.swift
 //
-//  AppDelegate.swift
-//  dime
+// Application delegate handling app lifecycle and configuration
+// Created by Tariq Shafiq
 //
-//  Created by Rafael Soh on 24/8/22.
+// Copyright © 2024 Zakatly. All rights reserved.
 //
 
 import SwiftUI

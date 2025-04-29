@@ -1,7 +1,9 @@
+// ContentView.swift
 //
-//  ContentView.swift
+// Main content view controller for Zakatly
+// Created by Tariq Shafiq
 //
-//  Created by Rafael Soh on 3/6/22.
+// Copyright © 2024 Zakatly. All rights reserved.
 //
 
 import SwiftUI

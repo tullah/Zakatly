@@ -1,6 +1,9 @@
+// DataController.swift
 //
-//  DataController.swift
-//  Bonsai
+// Core data controller for managing persistence and data operations
+// Created by Tariq Shafiq
+//
+// Copyright © 2024 Zakatly. All rights reserved.
 //
 //  Created by Rafael Soh on 3/6/22.
 //
