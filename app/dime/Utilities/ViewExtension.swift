@@ -37,14 +37,51 @@ extension HorizontalAlignment {
     static let moneySubtitle = HorizontalAlignment(MoneySubtitle.self)
 }
 
-extension UINavigationController: UIGestureRecognizerDelegate {
-    override open func viewDidLoad() {
+class CustomNavigationController: UINavigationController, UIGestureRecognizerDelegate {
+    override func viewDidLoad() {
         super.viewDidLoad()
         interactivePopGestureRecognizer?.delegate = self
     }
 
-    public func gestureRecognizerShouldBegin(_: UIGestureRecognizer) -> Bool {
+    func gestureRecognizerShouldBegin(_: UIGestureRecognizer) -> Bool {
         return viewControllers.count > 1
+    }
+}
+
+struct CustomNavigationViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .background(NavigationConfigurator())
+    }
+}
+
+private struct NavigationConfigurator: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        UIViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        if let navigationController = uiViewController.navigationController as? CustomNavigationController {
+            // Already configured
+            return
+        }
+        
+        if let navigationController = uiViewController.navigationController {
+            let customNavigationController = CustomNavigationController()
+            customNavigationController.navigationBar.prefersLargeTitles = navigationController.navigationBar.prefersLargeTitles
+            customNavigationController.viewControllers = navigationController.viewControllers
+            
+            // Replace the navigation controller
+            if let window = navigationController.view.window {
+                window.rootViewController = customNavigationController
+            }
+        }
+    }
+}
+
+extension View {
+    func enableSwipeBack() -> some View {
+        modifier(CustomNavigationViewModifier())
     }
 }
 

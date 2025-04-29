@@ -242,6 +242,7 @@ struct ActualBudgetView: View {
                 }
             }
         }
+        .enableSwipeBack()
     }
 }
 

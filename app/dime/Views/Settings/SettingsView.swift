@@ -495,6 +495,7 @@ struct SettingsView: View {
         ImportDataView()
       }
     }
+    .enableSwipeBack()
   }
 
   @ViewBuilder
