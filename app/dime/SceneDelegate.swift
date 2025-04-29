@@ -3,7 +3,7 @@
 // Scene delegate for managing UI lifecycle and window configuration
 // Created by Tariq Shafiq
 //
-// Copyright © 2024 Zakatly. All rights reserved.
+// Copyright © 2025 Zakatly. All rights reserved.
 //
 
 import SwiftUI

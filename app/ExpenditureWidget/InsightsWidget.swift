@@ -3,7 +3,7 @@
 // Widget extension for displaying financial insights and analytics
 // Created by Tariq Shafiq
 //
-// Copyright © 2024 Zakatly. All rights reserved.
+// Copyright © 2025 Zakatly. All rights reserved.
 //
 //  Created by Rafael Soh on 14/8/22.
 //

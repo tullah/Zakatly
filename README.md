@@ -133,4 +133,4 @@ For support, feature requests, or questions about Zakat calculations:
 
 ## Legal
 
-Copyright © 2024 Zakatly. All rights reserved.
+Copyright © 2025 Zakatly. All rights reserved.

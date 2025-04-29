@@ -3,7 +3,7 @@
 // Widget extension for displaying expenditure information
 // Created by Tariq Shafiq
 //
-// Copyright © 2024 Zakatly. All rights reserved.
+// Copyright © 2025 Zakatly. All rights reserved.
 
 import SwiftUI
 import WidgetKit
