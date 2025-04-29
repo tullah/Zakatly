@@ -61,7 +61,7 @@ private struct NavigationConfigurator: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-        if let navigationController = uiViewController.navigationController as? CustomNavigationController {
+        if uiViewController.navigationController is CustomNavigationController {
             // Already configured
             return
         }
