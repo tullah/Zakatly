@@ -474,7 +474,7 @@ struct CategoryListView: View {
                                         } label: {
                                             Image(systemName: "pencil")
                                         }
-                                        .tint(Color("Yellow"))
+                                        .tint(Color("WarningYellow"))
                                     }
                                 }
                                 .onMove(perform: moveItem)
@@ -555,7 +555,7 @@ struct CategoryListView: View {
                                         } label: {
                                             Image(systemName: "pencil")
                                         }
-                                        .tint(Color("Yellow"))
+                                        .tint(Color("WarningYellow"))
                                     }
                                 }
                                 .onMove(perform: moveItem)
