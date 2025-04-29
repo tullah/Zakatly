@@ -37,6 +37,54 @@ Zakatly is a finance app that puts Zakat at the heart of your financial planning
 - Elegant dark mode for comfortable night-time use
 - Informative widgets to keep track of your Zakat obligations at a glance
 
+## Project Structure
+
+### App Organization
+
+- `/app` - Main application directory
+  - `/BudgetIntent` - Budget-related app intents for Siri and Shortcuts integration
+  - `/BudgetIntentUI` - User interface components for budget intents
+  - `/dime` - Core application code
+    - `/Assets.xcassets` - Asset catalog containing:
+      - App icons and their variants
+      - Category colors for transaction categorization
+      - UI colors for theming and styling
+      - Gradient colors for visual elements
+      - Icons for UI elements
+      - Import-specific colors
+      - Percentage-based indicator colors
+      - Settings-related colors
+      - Tab bar icons
+    - `/Components` - Reusable UI components
+      - `/Buttons` - Custom button implementations
+      - `/Toolbar` - Toolbar-related components
+      - `/Transactions` - Transaction-specific UI components
+    - `/Data` - Data layer including Core Data model
+    - `/Models` - Business logic and data models
+    - `/Utilities` - Helper functions and utility classes
+    - `/Views` - Main application views
+      - `/Settings` - Settings screens and related views
+      - `/Shapes` - Custom shape components
+
+- `/ExpenditureWidget` - Widget extension for iOS home screen
+  - Contains widget-specific assets and localizations
+
+- `/Localizations` - Language support files
+  - Currently supports English (en), French (fr), and Russian (ru)
+
+### Supporting Directories
+
+- `/.github` - GitHub-specific files and issue templates
+- `/docs` - Documentation and assets for the repository
+- `/Zakatly.xcodeproj` - Xcode project configuration
+
+The app follows a modular architecture with clear separation of concerns:
+- UI components are isolated in the Components directory
+- Business logic is contained within Models
+- Data persistence is handled through Core Data
+- Localization is maintained separately for easy translation management
+- Assets are organized by function and type in the asset catalog
+
 ## How to help
 
 - For feature requests, bug reports, or suggestions about Zakat calculations, please reach out through our support channels
